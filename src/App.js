@@ -2,7 +2,7 @@ import './App.css';
 import {useState} from "react";
 import List from'./List'
 function App() {
-  const[currentItem,setCurrentItem]=useState("");
+  const[currentItem,setCurrentItem]=useState("npm st");
   const[itemList,updateItemlist]= useState([]);
   const onChangeHandler=e=>{
     console.log("current vaslue",e.target.value);
