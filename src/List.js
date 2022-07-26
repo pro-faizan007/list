@@ -1,10 +1,15 @@
 
 
 function list(props){
-    // console.log ("props",props);
     return (
-    <div> {props.itemList.map(itemObj=> {
-             return   <p>{itemObj.item}</p>
+    <div>
+         {props.itemList.map(itemObj=> {
+             return  ( 
+             <div className="item">
+                 <p>{itemObj.item}</p>
+                 <button>X</button>
+                </div>
+                );
             })}
             </div>
             );

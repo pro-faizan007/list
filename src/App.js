@@ -2,7 +2,7 @@ import './App.css';
 import {useState} from "react";
 import List from'./List'
 function App() {
-  const[currentItem,setCurrentItem]=useState("npm st");
+  const[currentItem,setCurrentItem]=useState("");
   const[itemList,updateItemlist]= useState([]);
   const onChangeHandler=e=>{
     console.log("current vaslue",e.target.value);
@@ -10,7 +10,7 @@ function App() {
   };
   const addItemToList=()=>{
     updateItemlist([...itemList, {item:currentItem, key:Date.now()}]);
-    // console.log("list items", itemList);
+    
     setCurrentItem("");
   };
   return (
